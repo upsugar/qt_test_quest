@@ -1,0 +1,34 @@
+{
+  "defaultDescription": "Чего сидишь? Порадуй котэ, купи.",
+  "defaultSlogan": "Сказачное заморское яство",
+  "brandName": "Нямушка",
+  "foods": [
+    {
+      "id": 0,
+      "isEnded": false,
+      "taste": "с фуа-гра",
+      "numberOfservings": "10",
+      "bonus": "мышь в подарок",
+      "weight": "0,5",
+      "description": "Печень утки разварная с артишоками."
+    },
+    {
+      "id": 1,
+      "isEnded": false,
+      "taste": "с рыбой",
+      "numberOfservings": "40",
+      "bonus": "2 мыши в подарок",
+      "weight": "2",
+      "description": "Головы щучьи с чесноком да свежайшая сёмгушка."
+    },
+    {
+      "id": 2,
+      "isEnded": true,
+      "taste": "с курой",
+      "numberOfservings": "100",
+      "bonus": "5 мышей в подарок заказчик доволен",
+      "weight": "5",
+      "description": "Филе из цыплят с трюфелями в бульоне."
+    }
+  ]
+}

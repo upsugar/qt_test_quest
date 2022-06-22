@@ -1,0 +1,210 @@
+.PackOfFeed {
+  position: relative;
+  width: 320px;
+  height: 460px;
+  border-radius: 10px;
+  clip-path: polygon(15% 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 0 10%);
+  -webkit-clip-path: polygon(15% 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 0 10%);
+  -o-clip-path: polygon(15% 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 0 10%);
+  -ms-clip-path: polygon(15% 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 0 10%);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.PackOfFeed::before {
+  content: "";
+  display: block;
+  position: relative;
+  width: 320px;
+  height: 460px;
+  background-color: white;
+  border-radius: 10px;
+  clip-path: polygon(15% 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 0 10%);
+  -webkit-clip-path: polygon(15% 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 0 10%);
+  -o-clip-path: polygon(15% 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 0 10%);
+  -ms-clip-path: polygon(15% 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 0 10%);
+  overflow: hidden;
+}
+
+.PackOfFeed_style_Default {
+  background-color: #1698d9;
+  border: 4px solid #1698d9;
+}
+
+.PackOfFeed_style_DefaultHover {
+  border: 4px solid #2ea8e6;
+  background-color: #2ea8e6;
+}
+
+.PackOfFeed_style_Selected {
+  border: 4px solid #d91667;
+  background-color: #d91667;
+}
+
+.PackOfFeed_style_SelectedHover {
+  border: 4px solid #e62e7a;
+  background-color: #e62e7a;
+}
+
+.PackOfFeed_ended {
+  border: 4px solid #b3b3b3;
+  background-color: #b3b3b3;
+  cursor: default;
+}
+
+.PackOfFeed-cat {
+  position: absolute;
+  bottom: -88px;
+  left: -24px;
+}
+
+.PackOfFeed-cat_ended {
+  opacity: 0.5;
+}
+
+.PackOfFeed-ball {
+  position: absolute;
+  background: #1698d9;
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  left: 225px;
+  bottom: 16px;
+}
+
+.PackOfFeed-ball_style_Default {
+  background: #1698d9;
+}
+
+.PackOfFeed-ball_style_DefaultHover {
+  background: #2ea8e6;
+}
+
+.PackOfFeed-ball_style_Selected {
+  background: #d91667;
+}
+
+.PackOfFeed-ball_style_SelectedHover {
+  background: #e62e7a;
+}
+
+.PackOfFeed-ball_ended {
+  background: #b3b3b3;
+}
+
+.PackOfFeed-weight {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  line-height: 30px;
+}
+
+.PackOfFeed-weight_value {
+  padding-top: 18px;
+  font-size: 42px;
+  text-align: center;
+  font-family: "Trebuchet MS", serif;
+  color: white;
+}
+
+.PackOfFeed-weight_measure {
+  font-size: 21px;
+  text-align: center;
+  font-family: "Trebuchet MS", serif;
+  color: white;
+}
+
+.PackOfFeed-caption {
+  text-align: center;
+  color: white;
+  font-size: 13px;
+  margin-top: 16px;
+  font-family: "Trebuchet MS", serif;
+  text-shadow: 1px 1px 2px #000, 0 0 1em #000, 0 0 0.2em #000;
+}
+
+.PackOfFeed-caption_link {
+  color: #138ac6;
+  text-decoration: none;
+  border-bottom: 1px dashed;
+}
+
+.PackOfFeed-caption_link_ {
+  color: #138ac6;
+}
+
+@media screen and (max-width: 470px) {
+  .App-header {
+    font-size: 26px;
+  }
+
+  .PackOfFeed {
+    width: 300px;
+    height: 440px;
+  }
+
+  .PackOfFeed::before {
+    width: 300px;
+    height: 440px;
+  }
+
+  .PackOfFeed-ball {
+    left: 200px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .App-header {
+    font-size: 26px;
+  }
+
+  .PackOfFeed {
+    width: 200px;
+    height: 340px;
+  }
+
+  .PackOfFeed::before {
+    width: 200px;
+    height: 340px;
+  }
+
+  .PackOfFeed-ball {
+    left: 140px;
+  }
+
+  .PackOfFeed-cat {
+    width: 250px;
+  }
+
+  .PackOfFeed-ball {
+    width: 50px;
+    height: 50px;
+    bottom: 10px;
+  }
+
+  .PackOfFeed-weight {
+    line-height: 20px;
+  }
+
+  .PackOfFeed-weight_value {
+    padding-top: 10px;
+    font-size: 25px;
+  }
+
+  .PackOfFeed-weight_measure {
+    padding-top: 0px;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .App-header {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .App-header {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,53 @@
+.Description {
+    position: absolute;
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    top: 15px;
+    left: 48px;
+}
+
+.Description_ended {
+    opacity: 0.5;
+}
+
+.Description-slogan {
+    font-size: 16px;
+    font-family: "Trebuchet MS";
+    color: #666666;
+}
+
+.Description-brandName {
+    font-size: 48px;
+    font-family: "Trebuchet MS";
+    font-weight: bold;
+    color: black;
+}
+
+.Description-taste {
+    font-size: 24px;
+    font-family: "Trebuchet MS";
+    font-weight: bold;
+    color: black;
+}
+
+.Description-numberOfServings {
+    font-size: 14px;
+    font-family: "Trebuchet MS";
+    width: 150px;
+    color: #666666;
+}
+
+@media screen and (max-width: 300px) {
+    .Description {
+        left: 30px;
+    }
+
+    .Description-slogan {
+        font-size: 12px;
+    }
+
+    .Description-brandName {
+        font-size: 30px;
+    }
+}
